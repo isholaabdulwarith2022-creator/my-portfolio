@@ -2091,4 +2091,34 @@ section > * {
         filter: blur(32px);
         opacity: 0.35;
     }
+}/* PROFILE WATERMARK — SUBTLE BRANDING */
+.hero {
+    isolation: isolate;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    width: min(620px, 58vw);
+    height: min(620px, 58vw);
+    right: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:
+        linear-gradient(135deg, rgba(9, 9, 11, 0.55), rgba(9, 9, 11, 0.08)),
+        url("../images/profile.jpg") center / cover no-repeat;
+    opacity: 0.055;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+}
+@media (max-width: 768px) {
+    .hero::after {
+        width: 330px;
+        height: 330px;
+        right: -135px;
+        top: 42%;
+        opacity: 0.018;
+        mix-blend-mode: normal;
+    }
 }
