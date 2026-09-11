@@ -1960,4 +1960,58 @@ footer p {
     .modal-content img {
         border-radius: 5px;
     }
+}/* =========================================================
+   MOBILE PERFORMANCE OPTIMIZATION
+   Visual design preserved; expensive mobile rendering reduced.
+   ========================================================= */
+@media (max-width: 768px) {
+    .navbar,
+    .nav-container,
+    .profile-card,
+    .modal-content {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+    }
+    .hero::before,
+    .hero::after,
+    section::before,
+    section::after {
+        filter: none !important;
+        opacity: 0.45 !important;
+    }
+    .project-card,
+    .service-card,
+    .profile-card,
+    .about-highlight,
+    .skill-card,
+    .contact-card {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22) !important;
+    }
+    .project-card:hover,
+    .service-card:hover,
+    .about-highlight:hover,
+    .skill-card:hover {
+        transform: none !important;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+    }
+    html {
+        scroll-behavior: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    body {
+        background-attachment: scroll !important;
+    }
+}
+@media (hover: none) and (pointer: coarse) {
+    .project-gallery img:hover,
+    .btn:hover,
+    .nav-links a:hover {
+        transform: none !important;
+        filter: none !important;
+    }
 }
