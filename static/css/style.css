@@ -2014,4 +2014,81 @@ footer p {
         transform: none !important;
         filter: none !important;
     }
+}/* =========================================================
+   SUBTLE COLOR-MESH BACKGROUND
+   Replaces visible circular background shapes.
+   Visual-only layer; layout and functionality unchanged.
+   ========================================================= */
+body {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(91, 33, 182, 0.055) 0%,
+            transparent 30%,
+            rgba(37, 99, 235, 0.045) 55%,
+            transparent 76%,
+            rgba(6, 182, 212, 0.04) 100%
+        ),
+        #09090b !important;
+    background-attachment: scroll !important;
+}
+.hero,
+section {
+    position: relative;
+    overflow: hidden;
+}
+.hero::before,
+.hero::after,
+section::before,
+section::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(45px);
+    opacity: 0.55;
+}
+.hero::before,
+section:nth-of-type(odd)::before {
+    width: 420px;
+    height: 260px;
+    top: 8%;
+    left: -180px;
+    background:
+        linear-gradient(
+            120deg,
+            rgba(124, 58, 237, 0.16),
+            rgba(37, 99, 235, 0.08),
+            transparent
+        );
+    transform: rotate(-12deg);
+}
+.hero::after,
+section:nth-of-type(even)::after {
+    width: 460px;
+    height: 280px;
+    right: -200px;
+    bottom: 5%;
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(6, 182, 212, 0.09),
+            rgba(99, 102, 241, 0.13)
+        );
+    transform: rotate(15deg);
+}
+.hero > *,
+section > * {
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .hero::before,
+    .hero::after,
+    section::before,
+    section::after {
+        filter: blur(32px);
+        opacity: 0.35;
+    }
 }
