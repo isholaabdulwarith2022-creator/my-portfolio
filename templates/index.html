@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ishola Abdulwarith | Python & Flask Web Developer</title>
+
+    <meta name="description"
+          content="Ishola Abdulwarith is a Python and Flask web developer building practical websites, business management systems, and web applications.">
+
+        <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+
+    <meta name="author" content="Ishola Abdulwarith">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111827">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ishola Abdulwarith | Python & Flask Web Developer">
+    <meta property="og:description" content="Python and Flask web developer building practical websites, business management systems, and web applications.">
+    <meta property="og:site_name" content="Ishola Abdulwarith">
+
+<link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                ISHOLA<span>.DEV</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="nav-contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        PYTHON & FLASK WEB DEVELOPER
+                    </p>
+
+                    <h1>
+                        I build websites
+                        <span>that solve real business problems.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I build practical websites, business management systems,
+                        and web applications that help businesses and organizations work better, serve customers, and grow online.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="hero-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>JavaScript</span>
+                        <span>PostgreSQL</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Profile -->
+
+                <div class="hero-visual">
+
+                    <div class="profile-card">
+
+                        <div class="profile-image">
+                            <img
+                                src="{{ url_for('static', filename='images/profile.jpg') }}"
+                                alt="Ishola Abdulwarith"
+                            >
+                        </div>
+
+                        <div class="profile-info">
+
+                            <h3>
+                                Ishola Abdulwarith
+                            </h3>
+
+                            <p>
+                                Web Developer
+                            </p>
+
+                        </div>
+
+                        <div class="status">
+                            <span></span>
+                            Available for projects
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section class="section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        ABOUT ME
+                    </p>
+
+                    <h2>
+                        Turning ideas into working solutions.
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            I'm Ishola Abdulwarith, a Python and Flask web developer focused on
+                            building practical digital solutions for real-world needs.
+                        </p>
+
+                        <p>
+                            My work combines Python, Flask, frontend development, PostgreSQL,
+                            and business-focused problem solving to create applications
+                            that are functional, responsive, secure, and easy to use.
+                        </p>
+
+                        <p>
+                            I enjoy taking a real-world problem and turning it into a
+                            reliable web solution that provides real value to its users.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-highlight">
+
+                        <div class="highlight">
+                            <strong>Web</strong>
+                            <span>Development</span>
+                        </div>
+
+                        <div class="highlight">
+                            <strong>Business</strong>
+                            <span>Solutions</span>
+                        </div>
+
+                        <div class="highlight">
+                            <strong>Problem</strong>
+                            <span>Solving</span>
+                        </div>
+
+                        <div class="highlight">
+                            <strong>Web</strong>
+                            <span>Applications</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== SERVICES ==================== -->
+
+        <section class="section section-dark" id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        WHAT I DO
+                    </p>
+
+                    <h2>
+                        Services I provide.
+                    </h2>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Business Websites
+                        </h3>
+
+                        <p>
+                            Professional, responsive websites designed to help businesses
+                            present their services and products while giving customers
+                            a clear and easy way to connect.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Web Applications
+                        </h3>
+
+                        <p>
+                            Custom Python and Flask applications built around real
+                            business or organizational requirements, with practical
+                            workflows and database integration where needed.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Business Management Systems
+                        </h3>
+
+                        <p>
+                            Database-driven systems that help businesses manage products,
+                            employees, sales, activities, notifications, and daily
+                            operations from one organized platform.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            04
+                        </div>
+
+                        <h3>
+                            WhatsApp Integration
+                        </h3>
+
+                        <p>
+                            WhatsApp-enabled websites that make it easier for customers
+                            to contact businesses, place orders, and request
+                            information directly through WhatsApp.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== PROJECTS ==================== -->
+
+        <section class="section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        SELECTED WORK
+                    </p>
+
+                    <h2>
+                        Projects I've built.
+                    </h2>
+
+                    <p>
+                        A selection of practical web applications and
+                        digital solutions I've developed.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- ==================================================
+                         PROJECT 1 - KAMPALA KULI-KULI
+                    =================================================== -->
+
+                    <article class="project-card project-featured">
+
+                        <div class="project-gallery four-images">
+
+                            <button
+                                class="gallery-image"
+                                data-image="{{ url_for('static', filename='images/business-management (frontend).PNG') }}"
+                                data-title="Kampala Kuli-Kuli - Business Website"
+                                aria-label="View Kampala Kuli-Kuli frontend"
+                            >
+                                <img
+                                    src="{{ url_for('static', filename='images/business-management (frontend).PNG') }}"
+                                    alt="Kampala Kuli-Kuli business website"
+                                    loading="lazy"
+                                >
+                            </button>
+
+
+                            <button
+                                class="gallery-image"
+                                data-image="{{ url_for('static', filename='images/business-management (admin page).PNG') }}"
+                                data-title="Kampala Kuli-Kuli - Admin Dashboard"
+                                aria-label="View Kampala Kuli-Kuli admin dashboard"
+                            >
+                                <img
+                                    src="{{ url_for('static', filename='images/business-management (admin page).PNG') }}"
+                                    alt="Kampala Kuli-Kuli admin dashboard"
+                                    loading="lazy"
+                                >
+                            </button>
+
+
+                            <button
+                                class="gallery-image"
+                                data-image="{{ url_for('static', filename='images/business-management (products).PNG') }}"
+                                data-title="Kampala Kuli-Kuli - Product Management"
+                                aria-label="View Kampala Kuli-Kuli product management"
+                            >
+                                <img
+                                    src="{{ url_for('static', filename='images/business-management (products).PNG') }}"
+                                    alt="Kampala Kuli-Kuli product management"
+                                    loading="lazy"
+                                >
+                            </button>
+
+
+                            <button
+                                class="gallery-image"
+                                data-image="{{ url_for('static', filename='images/business-management (login).PNG') }}"
+                                data-title="Kampala Kuli-Kuli - Secure Login"
+                                aria-label="View Kampala Kuli-Kuli login"
+                            >
+                                <img
+                                    src="{{ url_for('static', filename='images/business-management (login).PNG') }}"
+                                    alt="Kampala Kuli-Kuli secure login"
+                                    loading="lazy"
+                                >
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-category">
+                                BUSINESS WEBSITE & WEB APPLICATION
+                            </div>
+
+                            <h3>
+                                Kampala Kuli-Kuli - Complete Business Solution
+                            </h3>
+
+                            <p>
+                                A complete digital solution combining a
+                                customer-facing business website with a
+                                database-driven Business Management System.
+                                The system supports business operations,
+                                product management, employee access,
+                                sales, notifications and more.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>PostgreSQL</span>
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>WhatsApp Integration</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ==================================================
+                         PROJECT 2 — QUR'AN GUIDANCE
+                    =================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-gallery single-image">
+
+                            <button
+                                class="gallery-image"
+                                data-image="{{ url_for('static', filename='images/quran-guidance (dash).PNG') }}"
+                                data-title="Qur'an Guidance System"
+                                aria-label="View Qur'an Guidance System"
+                            >
+                                <img
+                                    src="{{ url_for('static', filename='images/quran-guidance (dash).PNG') }}"
+                                    alt="Qur'an Guidance System dashboard"
+                                    loading="lazy"
+                                >
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-category">
+                                INTELLIGENT WEB APPLICATION
+                            </div>
+
+                            <h3>
+                                Qur'an Guidance System
+                            </h3>
+
+                            <p>
+                                A web application designed to help users
+                                discover relevant Qur'anic guidance based
+                                on situations and needs they describe.
+                                The project combines Qur'anic data,
+                                situation classification and semantic
+                                matching.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Machine Learning</span>
+                                <span>Sentence Transformers</span>
+                                <span>SQLite</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ==================================================
+                         PROJECT 3 — AL-HIDAYAH
+                    =================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="project-gallery two-images">
+
+                            <button
+                                class="gallery-image"
+                                data-image="{{ url_for('static', filename='images/al-hidayah (main dash).PNG') }}"
+                                data-title="Al-Hidayah — Main Dashboard"
+                                aria-label="View Al-Hidayah main dashboard"
+                            >
+                                <img
+                                    src="{{ url_for('static', filename='images/al-hidayah (main dash).PNG') }}"
+                                    alt="Al-Hidayah main dashboard"
+                                    loading="lazy"
+                                >
+                            </button>
+
+
+                            <button
+                                class="gallery-image"
+                                data-image="{{ url_for('static', filename='images/al-hidayah (tafsir page).PNG') }}"
+                                data-title="Al-Hidayah — Tafsir"
+                                aria-label="View Al-Hidayah Tafsir"
+                            >
+                                <img
+                                    src="{{ url_for('static', filename='images/al-hidayah (tafsir page).PNG') }}"
+                                    alt="Al-Hidayah Tafsir page"
+                                    loading="lazy"
+                                >
+                            </button>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-category">
+                                QUR'AN & ISLAMIC RESOURCE WEB APPLICATION
+                            </div>
+
+                            <h3>
+                                Al-Hidayah - Qur'an, Tafsir, Hadith & Dua
+                            </h3>
+
+                            <p>
+                                A web application bringing together Qur'an
+                                reading, Tafsir, Hadith and Dua resources
+                                in one organized platform. The main dashboard
+                                provides dedicated feature areas while the
+                                reading experience keeps the content clean
+                                and accessible.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>PostgreSQL</span>
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== SKILLS ==================== -->
+
+        <section class="section section-dark" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        TECHNICAL SKILLS
+                    </p>
+
+                    <h2>
+                        Tools I work with.
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-list">
+
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                    <span>PostgreSQL</span>
+                    <span>REST APIs</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Responsive Design</span>
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CONTACT ==================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container contact-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Have a project in mind?
+                    </h2>
+
+                    <p>
+                        Let's discuss how I can help turn your idea into
+                        a practical digital solution.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="https://wa.me/2348051087468"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        Message Me on WhatsApp
+                    </a>
+
+
+                    <a
+                        href="mailto:isholaabdulwarithcareer@gmail.com"
+                        class="btn btn-secondary"
+                    >
+                        Send an Email
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div>
+
+                <strong>
+                    ISHOLA<span>.DEV</span>
+                </strong>
+
+                <p>
+                    Python & Flask Web Developer
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 Ishola Abdulwarith. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==================== IMAGE VIEWER ==================== -->
+
+    <div
+        class="image-modal"
+        id="imageModal"
+        aria-hidden="true"
+    >
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Close image viewer"
+        >
+            ×
+        </button>
+
+        <div class="modal-content">
+
+            <img
+                id="modalImage"
+                src=""
+                alt=""
+            >
+
+            <p id="modalTitle"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
+
+
