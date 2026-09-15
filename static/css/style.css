@@ -892,6 +892,7 @@ nav a:hover::after {
     padding: 1px;
     background: linear-gradient(135deg, rgba(124,92,255,0.5), transparent 35%, rgba(0,217,255,0.35));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
